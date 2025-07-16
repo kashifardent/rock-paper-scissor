@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ardent Template</title>
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <!--font-awesome link for icons-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/font-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Underdog&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header content of the page -->
+      <header></header>
+      <!-- main content of the page -->
+      <main>
+        <div class="wrapper">
+          <h1>Let's Play</h1>
+          <div class="score-container">
+            <div class="title">
+              <span class="rock">rock</span>
+              <span class="paper">paper</span>
+              <span class="scissors">scissors</span>
+            </div>
+            <div class="reset-container">
+              <button class="reset"><span>reset</span></button>
+            </div>
+            <div class="scorecard-container">
+              <div class="scorecard user-score">
+                <span class="score-title">user score</span>
+                <span class="score">12</span>
+              </div>
+              <div class="scorecard computer-score">
+                <span class="score-title">computer score</span>
+                <span class="score">12</span>
+              </div>
+            </div>
+          </div>
+          <p class="chances-text">10 chances left</p>
+          <div class="play-box">
+            <div class="user">
+              <span class="hand rock-hand"></span>
+              <h2>you</h2>
+            </div>
+            <div class="computer">
+              <span class="hand scissors-hand"></span>
+              <h2>computer</h2>
+            </div>
+          </div>
+          <div class="choices-container">
+            <h3>Select to start the game</h3>
+            <div class="choices">
+              <button class="choices-rock">rock</button>
+              <button class="choices-paper">paper</button>
+              <button class="choices-scissors">scissors</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer content of the page -->
+      <footer></footer>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

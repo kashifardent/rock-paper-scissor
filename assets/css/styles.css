@@ -1,0 +1,445 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+			========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* for all */
+body {
+	--primary-color: #102E50;
+	--secondary-color: #FBFBFB;
+	--rock: #DAD2FF;
+	--paper: #F4F8D3;
+	--scissors: #E5989B;
+	--win: #DDEB9D;
+	--lose: #E52020;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Underdog", system-ui;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	text-transform: uppercase;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+  max-width: 760px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+	padding: 30px 0;
+}
+
+h1 {
+	margin-top: 40px;
+	font-size: 5rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.score-container {
+	min-width: 300px;
+	padding: 20px;
+	border: 5px solid var(--secondary-color);
+	border-radius: 10px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.reset {
+	padding: 10px;
+	border: 5px solid;
+	border-radius: 10px;
+	background-color: var(--secondary-color);
+}
+
+.reset span { display: none; }
+
+.reset::after {
+	content: '\f01e';
+	color: var(--primary-color);
+	font-family: 'FontAwesome';
+	font-size: 40px;
+}
+
+.reset:hover {
+	box-shadow: var(--secondary-color) 0px 4px 16px, var(--secondary-color) 0px 8px 32px;
+}
+
+.scorecard-container {
+	display: flex;
+	gap: 15px;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.title .rock {
+	color: var(--rock);
+}
+
+.title .paper {
+	color: var(--paper);
+}
+
+.title .scissors {
+	color: var(--scissors);
+}
+
+.scorecard {
+	width: 120px;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	gap: 10px;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+.score-title {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.score {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.chances-text {
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+}
+
+
+.play-box {
+	width: 70%;
+	margin: 40px auto;
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+}
+
+.play-box > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.play-box h2 {
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+.hand {
+	display: block;
+	border: 10px solid var(--paper);
+	border-radius: 50%;
+	background-color: var(--secondary-color);
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.hand::after {
+	width: 60px;
+	height: 60px;
+	padding: 20px;
+	border-radius: 50%;
+	font-family: "FontAwesome";
+	font-size: 60px;
+	display: block;
+	color: var(--primary-color);
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.rock-hand {
+	border-color: var(--rock);
+}
+
+.paper-hand {
+	border-color: var(--paper);
+}
+
+.scissors-hand {
+	border-color: var(--scissors);
+}
+
+.rock-hand::after {
+	content: '\f255';
+}
+
+.paper-hand::after {
+	content: '\f256';
+}
+
+.scissors-hand::after {
+	content: '\f25b';
+}
+
+.choices-container h3 {
+	padding-bottom: 30px;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+.choices {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.choices button {
+	padding: 10px 30px;
+	border: 5px solid;
+	border-radius: 10px;
+	text-transform: inherit;
+	font-size: 25px;
+	font-family:  inherit;
+}
+
+.choices button:hover {
+	box-shadow: var(--secondary-color) 0px 4px 16px, var(--secondary-color) 0px 8px 32px;
+}
+
+.choices-rock {
+	background-color: var(--rock);
+}
+
+.choices-paper {
+	background-color: var(--paper);
+}
+
+.choices-scissors {
+	background-color: var(--scissors);
+}
+
+.result {
+	font-size: 50px;
+	animation: blink 1s;
+	animation-iteration-count: 5;
+}
+
+.win {
+	color: var(--win);
+}
+
+.lose {
+	color: var(--lose);
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0.3;
+	} 
+	50% {
+		opacity: 1;
+	} 
+	100% {
+		opacity: 0.3;
+	}
+}
